@@ -1171,7 +1171,7 @@ section,
 
 .about .profile-figure .profile-photo {
   width: 100%;
-  border-radius: 80px;
+  border-radius: 20px;
   box-shadow: 0 10px 30px
     color-mix(in srgb, var(--default-color), transparent 92%);
   transform: translateY(0);
@@ -2505,7 +2505,6 @@ section,
   flex-wrap: wrap;
   gap: 15px;
   padding: 0;
-  margin: 0 0 40px;
   list-style: none;
 }
 
@@ -3462,6 +3461,9 @@ section,
   }
 }
 
+#portfolioContainer{
+  margin-top: 50px;
+}
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/

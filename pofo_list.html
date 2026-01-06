@@ -15,50 +15,50 @@
     <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
     <link href="assets/css/main.css" rel="stylesheet">
-    <script>
+    <SCRipt>
         const portfolioData = [
-        {
-            title: "Design DOS",
-            category: "UI/UX Design",
-            filter: "filter-ui",
-            thumb: "assets/img/portfolio/portfolio01.png",
-            lightbox: "assets/img/portfolio/portfolio01.png",
-            link: "/pofo01_.view.html"
-        },
-        {
-            title: "홍커뮤니케이션",
-            category: "UI/UX Design",
-            filter: "filter-ui",
-            thumb: "assets/img/portfolio/portfolio02.png",
-            lightbox: "assets/img/portfolio/portfolio02.png",
-            link: "/pofo02_.view.html"
-        },
-        {
-            title: "디노마드",
-            category: "UI/UX Design",
-            filter: "filter-ui",
-            thumb: "assets/img/portfolio/portfolio03.png",
-            lightbox: "assets/img/portfolio/portfolio03.png",
-            link: "/pofo03_.view.html"
-        },
-        {
-            title: "Design DOS",
-            category: "UI/UX Design",
-            filter: "filter-ui",
-            thumb: "assets/img/portfolio/portfolio04.png",
-            lightbox: "assets/img/portfolio/portfolio04.png",
-            link: "/pofo04_.view.html"
-        },
-        {
-            title: "Design DOS",
-            category: "UI/UX Design",
-            filter: "filter-ui",
-            thumb: "assets/img/portfolio/portfolio01.png",
-            lightbox: "assets/img/portfolio/portfolio01.png",
-            link: "/pofo01_.view.html"
-        }
+            {
+                title: "Design DOS",
+                category: "UI/UX Design",
+                filter: "filter-ui",
+                thumb: "assets/img/portfolio/portfolio01.png",
+                lightbox: "assets/img/portfolio/portfolio01.png",
+                link: "/pofo01_.view.html"
+            },
+            {
+                title: "홍커뮤니케이션",
+                category: "UI/UX Design",
+                filter: "filter-ui",
+                thumb: "assets/img/portfolio/portfolio02.png",
+                lightbox: "assets/img/portfolio/portfolio02.png",
+                link: "/pofo02_.view.html"
+            },
+            {
+                title: "디노마드",
+                category: "UI/UX Design",
+                filter: "filter-ui",
+                thumb: "assets/img/portfolio/portfolio03.png",
+                lightbox: "assets/img/portfolio/portfolio03.png",
+                link: "/pofo03_.view.html"
+            },
+            {
+                title: "Design DOS",
+                category: "UI/UX Design",
+                filter: "filter-ui",
+                thumb: "assets/img/portfolio/portfolio04.png",
+                lightbox: "assets/img/portfolio/portfolio04.png",
+                link: "/pofo04_.view.html"
+            },
+            {
+                title: "Design DOS",
+                category: "UI/UX Design",
+                filter: "filter-ui",
+                thumb: "assets/img/portfolio/portfolio01.png",
+                lightbox: "assets/img/portfolio/portfolio01.png",
+                link: "/pofo01_.view.html"
+            }
         ];
-    </script>
+    </SCRipt>
 </head>
 
 <body class="portfolio-details-page portfolio-page">
@@ -85,14 +85,13 @@
                 <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
                     <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="200">
                         <li data-filter="*" class="filter-active"><i class="bi bi-grid-3x3"></i>All Projects</li>
+                        <li data-filter=".filter-ui"><i class="bi bi-laptop"></i>WebDesign</li>
                         <li data-filter=".filter-ui"><i class="bi bi-phone"></i>UI/UX</li>
                         <li data-filter=".filter-development"><i class="bi bi-code-slash"></i>Publishing</li>
-                        <li data-filter=".filter-photography"><i class="bi bi-camera"></i> Event Page</li>
+                        <li data-filter=".filter-photography"><i class="bi bi-bezier"></i>Photoshop</li>
                     </ul>
 
                     <div class="row gy-4 isotope-container" id="portfolioContainer" data-aos="fade-up" data-aos-delay="300">
-
-                        
 
                     </div>
                 </div>
@@ -124,43 +123,29 @@
 	<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 	<script src="assets/js/main.js"></script>
     <script>
-        document.addEventListener("DOMContentLoaded", () => {
         const container = document.getElementById("portfolioContainer");
-
         portfolioData.forEach(item => {
-            container.insertAdjacentHTML("beforeend", `
+        container.innerHTML += `
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item ${item.filter}">
                 <div class="portfolio-card">
-                <div class="portfolio-img">
+                    <div class="portfolio-img">
                     <img src="${item.thumb}" alt="${item.title}" class="img-fluid">
                     <div class="portfolio-overlay">
-                    <a href="${item.lightbox}" class="glightbox portfolio-lightbox">
+                        <a href="${item.lightbox}" class="glightbox portfolio-lightbox">
                         <i class="bi bi-plus"></i>
-                    </a>
-                    <a href="${item.link}" class="portfolio-details-link">
+                        </a>
+                        <a href="${item.link}" class="portfolio-details-link">
                         <i class="bi bi-link"></i>
-                    </a>
+                        </a>
                     </div>
-                </div>
-                <div class="portfolio-info">
+                    </div>
+                    <div class="portfolio-info">
                     <h5 class="ms_font_w">${item.title}</h5>
                     <p>${item.category}</p>
-                </div>
+                    </div>
                 </div>
             </div>
-            `);
-        });
-
-        // Isotope
-        let iso = new Isotope(container, {
-            itemSelector: '.portfolio-item',
-            layoutMode: 'masonry'
-        });
-
-        // Lightbox
-        GLightbox({
-            selector: '.portfolio-lightbox'
-        });
+        `;
         });
     </script>
 </body>
