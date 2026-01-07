@@ -15,21 +15,74 @@
     <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
     <link href="assets/css/main.css" rel="stylesheet">
-    <script>
-        const portfolioData = [];
-
-        for (let i = 1; i <= 8; i++) {
-            const num = String(i).padStart(2, '0');
-
-            portfolioData.push({
-                title: "UI/UX Design",
+    <SCRipt>
+        const portfolioData = [
+            {
+                title: "Design DOS",
+                category: "UI/UX Design",
                 filter: "filter-ui",
-                thumb: `assets/img/portfolio/portfolio${num}.png`,
-                lightbox: `assets/img/portfolio/portfolio${num}.png`,
-                link: `pofo${num}_view.html`
-            });
-        }
-    </script>
+                thumb: "assets/img/portfolio/portfolio01.png",
+                lightbox: "assets/img/portfolio/portfolio01.png",
+                link: "/pofo01_view.html"
+            },
+            {
+                title: "홍커뮤니케이션",
+                category: "UI/UX Design",
+                filter: "filter-ui",
+                thumb: "assets/img/portfolio/portfolio02.png",
+                lightbox: "assets/img/portfolio/portfolio02.png",
+                link: "/pofo02_view.html"
+            },
+            {
+                title: "디노마드",
+                category: "UI/UX Design",
+                filter: "filter-ui",
+                thumb: "assets/img/portfolio/portfolio03.png",
+                lightbox: "assets/img/portfolio/portfolio03.png",
+                link: "/pofo03_view.html"
+            },
+            {
+                title: "Design DOS",
+                category: "UI/UX Design",
+                filter: "filter-ui",
+                thumb: "assets/img/portfolio/portfolio04.png",
+                lightbox: "assets/img/portfolio/portfolio04.png",
+                link: "/pofo04_view.html"
+            },
+            {
+                title: "Design DOS",
+                category: "UI/UX Design",
+                filter: "filter-ui",
+                thumb: "assets/img/portfolio/portfolio05.png",
+                lightbox: "assets/img/portfolio/portfolio05.png",
+                link: "/pofo05_view.html"
+            },
+            {
+                title: "Design DOS",
+                category: "UI/UX Design",
+                filter: "filter-ui",
+                thumb: "assets/img/portfolio/portfolio06.png",
+                lightbox: "assets/img/portfolio/portfolio06.png",
+                link: "/pofo06_view.html"
+            },
+            {
+                title: "홍커뮤니케이션",
+                category: "UI/UX Design",
+                filter: "filter-ui",
+                thumb: "assets/img/portfolio/portfolio07.png",
+                lightbox: "assets/img/portfolio/portfolio07.png",
+                link: "/pofo07_view.html"
+            },
+            {
+                title: "디노마드",
+                category: "UI/UX Design",
+                filter: "filter-ui",
+                thumb: "assets/img/portfolio/portfolio08.png",
+                lightbox: "assets/img/portfolio/portfolio08.png",
+                link: "/pofo08_view.html"
+            }
+        ];
+    </SCRipt>
 </head>
 
 <body class="index-page">
@@ -232,10 +285,10 @@
 
                     <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="200">
                         <li data-filter="*" class="filter-active"><i class="bi bi-grid-3x3"></i>All Projects</li>
-                        <li data-filter=".filter-ui"><i class="bi bi-laptop"></i>WebDesign</li>
+                        <li data-filter=".filter-web"><i class="bi bi-laptop"></i>WebDesign</li>
                         <li data-filter=".filter-ui"><i class="bi bi-phone"></i>UI/UX</li>
-                        <li data-filter=".filter-development"><i class="bi bi-code-slash"></i>Publishing</li>
-                        <li data-filter=".filter-photography"><i class="bi bi-bezier"></i>Photoshop</li>
+                        <li data-filter=".filter-publish"><i class="bi bi-code-slash"></i>Publishing</li>
+                        <li data-filter=".filter-photoshop"><i class="bi bi-bezier"></i>Photoshop</li>
                     </ul>
 
                     <div class="row g-4 isotope-container" id="portfolioContainer" data-aos="fade-up" data-aos-delay="300">
