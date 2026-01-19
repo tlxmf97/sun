@@ -182,7 +182,9 @@ h6 {
 .pt100 {
   padding: 100px 0 0;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 .php-email-form .error-message {
   display: none;
   background: #df1529;
@@ -377,8 +379,8 @@ h6 {
   }
 
   .navmenu li:hover > a,
-  .navmenu .active,
-  .navmenu .active:focus {
+  .navmenu .active:focus,
+  .navmenu .active {
     color: var(--nav-hover-color);
   }
 
@@ -1845,9 +1847,21 @@ section,
   .main_row{
     padding: 0 30px;
   }
+  .logo_skill .flex{
+    gap: 8px!important;
+  }
 }
 
 @media (max-width: 575.98px) {
+  .header .container{
+    padding:0 30px;
+  }
+  .header{
+    height: 80px;
+  }
+  .header .logo {
+    width: 100px;
+  }
   .services .service-item {
     flex-direction: column;
     text-align: center;
@@ -3663,4 +3677,15 @@ section,
 --------------------------------------------------------------*/
 .starter-section {
   /* Add your styles here */
+}
+
+@media (max-width: 500px) {
+  .logo_skill .flex{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px !important;
+  }
+  .logo_skill .flex li{
+    padding: 35px;
+  }
 }
