@@ -18,68 +18,101 @@
     <SCRipt>
         const portfolioData = [
             {
-                title: "Design DOS",
-                category: "UI/UX Design",
-                filter: "filter-ui",
-                thumb: "assets/img/portfolio/portfolio01.png",
-                lightbox: "assets/img/portfolio/portfolio01.png",
-                link: "/pofo01_view.html"
-            },
-            {
-                title: "홍커뮤니케이션",
-                category: "UI/UX Design",
-                filter: "filter-ui",
-                thumb: "assets/img/portfolio/portfolio02.png",
-                lightbox: "assets/img/portfolio/portfolio02.png",
-                link: "/pofo02_view.html"
-            },
-            {
                 title: "디노마드",
-                category: "UI/UX Design",
-                filter: "filter-ui",
+                category: "Web Design",
+                filter: "filter-web",
                 thumb: "assets/img/portfolio/portfolio03.png",
                 lightbox: "assets/img/portfolio/portfolio03.png",
                 link: "/pofo03_view.html"
             },
             {
-                title: "Design DOS",
+                title: "쓰담서울",
+                category: "banner Design",
+                filter: "filter-photoshop",
+                thumb: "assets/img/portfolio/banner04.png",
+                lightbox: "assets/img/portfolio/banner04.png",
+                link: "/banner04_view.html"
+            },
+            {
+                title: "IDA커뮤니티",
                 category: "UI/UX Design",
                 filter: "filter-ui",
+                thumb: "assets/img/portfolio/uiux05.png",
+                lightbox: "assets/img/portfolio/uiux05.png",
+                link: "/uiux05_view.html"
+            },
+            {
+                title: "크림에듀",
+                category: "Publish",
+                filter: "filter-publish",
+                thumb: "assets/img/portfolio/publi01.png",
+                lightbox: "assets/img/portfolio/publi01.png",
+                link: "/pub01_view.html"
+            },
+            {
+                title: "캐시타운",
+                category: "UI/UX Design",
+                filter: "filter-ui",
+                thumb: "assets/img/portfolio/uiux04.png",
+                lightbox: "assets/img/portfolio/uiux04.png",
+                link: "/uiux04_view.html"
+            },
+            {
+                title: "디자인도스",
+                category: "Web Design",
+                filter: "filter-web",
+                thumb: "assets/img/portfolio/portfolio01.png",
+                lightbox: "assets/img/portfolio/portfolio01.png",
+                link: "/pofo01_view.html"
+            },
+            {
+                title: "바이오트루",
+                category: "banner Design",
+                filter: "filter-photoshop",
+                thumb: "assets/img/portfolio/banner10.png",
+                lightbox: "assets/img/portfolio/banner10.png",
+                link: "/banner10_view.html"
+            },
+            {
+                title: "마이원 세미나",
+                category: "Publish",
+                filter: "filter-publish",
+                thumb: "assets/img/portfolio/publi13.png",
+                lightbox: "assets/img/portfolio/publi13.png",
+                link: "/pub13_view.html"
+            },
+            {
+                title: "기업 전시회",
+                category: "Publish",
+                filter: "filter-publish",
+                thumb: "assets/img/portfolio/publi11.png",
+                lightbox: "assets/img/portfolio/publi11.png",
+                link: "/pub11_view.html"
+            },
+            {
+                title: "해외동포대회",
+                category: "Web Design",
+                filter: "filter-web",
                 thumb: "assets/img/portfolio/portfolio04.png",
                 lightbox: "assets/img/portfolio/portfolio04.png",
                 link: "/pofo04_view.html"
             },
+            
             {
-                title: "Design DOS",
-                category: "UI/UX Design",
-                filter: "filter-ui",
-                thumb: "assets/img/portfolio/portfolio05.png",
-                lightbox: "assets/img/portfolio/portfolio05.png",
-                link: "/pofo05_view.html"
+                title: "바이오트루",
+                category: "banner Design",
+                filter: "filter-photoshop",
+                thumb: "assets/img/portfolio/banner01.png",
+                lightbox: "assets/img/portfolio/banner01.png",
+                link: "/banner01_view.html"
             },
             {
-                title: "Design DOS",
+                title: "브라보",
                 category: "UI/UX Design",
                 filter: "filter-ui",
-                thumb: "assets/img/portfolio/portfolio06.png",
-                lightbox: "assets/img/portfolio/portfolio06.png",
-                link: "/pofo06_view.html"
-            },
-            {
-                title: "홍커뮤니케이션",
-                category: "UI/UX Design",
-                filter: "filter-ui",
-                thumb: "assets/img/portfolio/portfolio07.png",
-                lightbox: "assets/img/portfolio/portfolio07.png",
-                link: "/pofo07_view.html"
-            },
-            {
-                title: "디노마드",
-                category: "UI/UX Design",
-                filter: "filter-ui",
-                thumb: "assets/img/portfolio/portfolio08.png",
-                lightbox: "assets/img/portfolio/portfolio08.png",
-                link: "/pofo08_view.html"
+                thumb: "assets/img/portfolio/uiux06.png",
+                lightbox: "assets/img/portfolio/uiux06.png",
+                link: "/uiux06_view.html"
             }
         ];
     </SCRipt>
@@ -91,7 +124,7 @@
         <section id="hero" class="hero section">
             <div class="container" data-aos="fade-up" data-aos-delay="100">
                 <div class="row gy-4 align-items-center">
-                    <div class="col-lg-6 order-2 order-lg-1">
+                    <div class="col-lg-6 order-2 order-lg-1 main_row">
                         <div class="hero-content">
                             <h1 class="ms_font_w" data-aos="fade-up" data-aos-delay="200">
                                 Hello,<br>I'm <span class="highlight">SunYoung</span>
@@ -107,7 +140,11 @@
                             </p>
                             <div class="hero-actions" data-aos="fade-up" data-aos-delay="500">
                                 <a href="#portfolio" class="btn btn-primary">My Portfolio</i></a>
-                                <a href="#contact" class="btn btn-outline">My Contact</a>
+                                <a href="/pofo_list.html" class="btn btn-outline">My Contact</a>
+
+                                <a href="/pofo_list.html" class="btn-ghost">
+                                My Portfolio <i class="bi bi-arrow-up-right"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -146,7 +183,7 @@
                         <div class="intro-content">
                             <h2 class="ms_font_w headline">Hello,<br>
                                 I’m Sunyoung Joo —<br>
-                                A <span class="font_col">Web Designer.</span></h2>
+                                a <span class="font_col">Web Designer.</span></h2>
                             <p class="lead">
                                 8년차 웹디자이너로써 다양한 프로젝트를 웹디자인과 퍼블리싱을 담당하며
                                 최적화되고 완성도 높은 결과물을 만듭니다.<br>
@@ -302,7 +339,7 @@
         </section>
 
 
-        <section id="contact" class="contact section">
+        <!--section id="contact" class="contact section">
             <div class="container section-title" data-aos="fade-up">
                 <h2 class="ms_font_w">Contact</h2>
             </div>
@@ -369,7 +406,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section-->
     </main>
     <div id="footer"></div>
     <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
