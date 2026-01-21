@@ -296,6 +296,9 @@ html {
   .header .navmenu {
     order: 3;
   }
+  .skill_info .skill_inner{
+    gap:100px!important;
+  }
 }
 
 /* Global Header on Scroll
@@ -1700,6 +1703,9 @@ section,
   .logo_skill .flex li {
     padding: 25px;
   }
+    .skill_info .skill_inner{
+    gap:50px!important;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -2966,7 +2972,6 @@ section,
 
 .portfolio-details .content-section .project-overview {
   text-align: center;
-  padding: 0 150px;
 }
 
 .portfolio-details .content-section .project-overview h2 {
